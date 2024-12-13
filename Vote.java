@@ -5,4 +5,9 @@ public class Vote {
     private final String date;
 
 
+    public Vote(Person voter, String date) {
+        this.voter = voter;
+        this.date = date;
+    }
+
 }
