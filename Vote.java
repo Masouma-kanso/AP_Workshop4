@@ -10,6 +10,7 @@ public class Vote {
         this.date = date;
     }
 
+<<<<<<< HEAD
     public Person getVoter() {
         return voter;
     }
@@ -29,4 +30,6 @@ public class Vote {
     public int hashCode() {
         return Objects.hash(voter, date);
     }
+=======
+>>>>>>> 64d7ca839665031be2235084d75b98ca8616c30d
 }
