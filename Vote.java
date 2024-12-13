@@ -17,4 +17,11 @@ public class Vote {
     public String getDate() {
         return date;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Vote vote = (Vote) o;
+        return Objects.equals(voter, vote.voter) && Objects.equals(date, vote.date);
+    }
 }
