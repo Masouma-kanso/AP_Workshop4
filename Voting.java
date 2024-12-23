@@ -109,4 +109,15 @@ public class Voting {
         }
     }
 
+
+    public void printVoters() {
+        System.out.println("printVoters:");
+        if (this.isAnonymous) {
+            System.out.println("Voting is anonymous, so voter information is not available.");
+        } else {
+            for (Person voter : this.voters) {
+                System.out.println(voter.getFirstName() + voter.getLastName());
+            }
+        }
+    }
 }
