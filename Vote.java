@@ -25,4 +25,9 @@ public class Vote {
         VotingSystem that = (VotingSystem) 0;
         return Objects.equals(getVotingList(), that.getVotingList());
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getVotingList());
+    }
 }
