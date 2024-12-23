@@ -21,4 +21,17 @@ public class VotingSystem {
     public void createVoting(String question, boolean isAnonymous, int type, ArrayList<String> choices) {
 
     }
+
+    public void printResults(int index) {
+    }
+
+    public void printVoting(int index) {
+        Voting voting = getVoting(index);
+        System.out.println("Voting Question: " + voting.getQuestion());
+        System.out.println("Voting Type: " + voting.getType());
+        System.out.println("Choices:");
+        for (String choice : voting.getChoices().keySet()) {
+            System.out.println("- " + choice);
+        }
+    }
 }
