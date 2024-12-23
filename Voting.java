@@ -86,4 +86,17 @@ public class Voting {
             this.voters.add(voter);
         }
     }
+    public void vote(Person person) {
+        // Randomly select a choice from the choices HashMap
+        String randomChoice = new ArrayList<>(this.choices.keySet()).get(new Random().nextInt(this.choices.size()));
+
+        Vote vote = new Vote(person, "date");
+        this.choices.get(randomChoice).add(vote);
+
+        // Add the person to the voters list if they haven't already voted
+        if (!this.voters.contains(person)) {
+            this.voters.add(person);
+            // sorry i have writed the 2 vote methods in the same commit
+        }
+    }
 }
