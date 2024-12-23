@@ -3,5 +3,7 @@ import java.util.HashSet;
 
 public class VotingSystem {
     private ArrayList<Voting> votingList;
+    public VotingSystem() {
+    }
 
 }
