@@ -7,4 +7,10 @@ public class Main {
         Voting singleChoiceVoting = new Voting();
         Voting multiChoiceVoting = new Voting();
     }
+       singleChoiceVoting.vote(new Person("A", "B"));
+        singleChoiceVoting.vote(new Person("C", "D"));
+        multiChoiceVoting.vote(new Person("E", "F"));
+        multiChoiceVoting.vote(new Person("G", "H"));
+        system.printResults();
+
 }
