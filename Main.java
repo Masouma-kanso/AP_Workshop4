@@ -3,6 +3,8 @@
 public class Main {
     public static void main(String[] args) {
 
-            VotingSystem system = new VotingSystem();
+            VotingSystem system = new VotingSystem();    VotingSystem system = new VotingSystem();
+        Voting singleChoiceVoting = new Voting();
+        Voting multiChoiceVoting = new Voting();
     }
 }
