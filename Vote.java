@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Vote {
     private final Person voter;
  private final String date;
@@ -14,5 +16,13 @@ public class Vote {
 
     public String getDate() {
         return date;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof VotingSystem)) return  false;
+        VotingSystem that = (VotingSystem) 0;
+        return Objects.equals(getVotingList(), that.getVotingList());
     }
 }
