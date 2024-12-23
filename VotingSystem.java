@@ -13,4 +13,9 @@ public class VotingSystem {
     public ArrayList<Voting> getVotingList() {
         return votingList;
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }
