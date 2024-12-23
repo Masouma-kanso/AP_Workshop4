@@ -18,4 +18,7 @@ public class VotingSystem {
     public int hashCode() {
         return super.hashCode();
     }
+    public void createVoting(String question, boolean isAnonymous, int type, ArrayList<String> choices) {
+
+    }
 }
