@@ -34,4 +34,12 @@ public class VotingSystem {
             System.out.println("- " + choice);
         }
     }
+    public void printVoters(int index) {
+        Voting voting = getVoting(index);
+        System.out.println("Voters for Voting Question: " + voting.getQuestion());
+        for (Person voter : voting.getVoters()) {
+            System.out.println("Voter: " + voter);
+        }
+    }
+
 }
