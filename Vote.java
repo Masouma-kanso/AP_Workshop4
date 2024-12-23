@@ -22,4 +22,8 @@ public class Vote {
         return Objects.equals(getVotingList(), that.getVotingList());
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getVotingList());
+    }
 }
